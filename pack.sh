@@ -2,7 +2,7 @@
 set -e
 
 docker_user="mendonca"
-image_tag="${docker_user}/is-msgs-protoc:1.1.4"
+image_tag="${docker_user}/is-msgs-protoc:1.1.7"
 docker build . -f Dockerfile -t ${image_tag} --no-cache --network=host
 
 read -r -p "Do you want to push image ${image_tag}? [y/N] " response
